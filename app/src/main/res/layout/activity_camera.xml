@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/splash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:text="PDF Scanner 📷"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 🔥 IMAGE PREVIEW -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/imageContainer"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </HorizontalScrollView>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/captureBtn"
+        android:text="Capture Image"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1A4DFF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:text="Convert to PDF"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00C853"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:text="Share PDF"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6D00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
